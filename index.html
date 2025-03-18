@@ -66,9 +66,7 @@
           color: white;
         }
         
-
-      /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      @media (min-width: 501px) and (max-width: 1250px) {
         html{
             background: linear-gradient(to bottom,#213555 5%, #606a76 83%) ;
           }
@@ -81,6 +79,22 @@
           gap: 30px;
         }
         }
+
+        @media (max-width: 500px) {
+        html{
+            background: linear-gradient(to bottom,#213555 5%, #606a76 83%) ;
+          }
+    
+        .pricing-container{
+          display: flex;
+          flex-direction: column;
+          margin-top: 10%;
+          margin-bottom: 10%;
+          gap: 50px;
+        }
+        }
+
+
         
       
     </style>
